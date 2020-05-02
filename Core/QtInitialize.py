@@ -1,11 +1,11 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget
-from UI.mainUI import *
+from UI import mainUI
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    w = QWidget()
-    ui = Ui_Form()
-    ui.setupUi(w)
-    w.show()
+    widget = QWidget()
+    main_ui = mainUI.Ui_Form()
+    main_ui.setupUi(widget)
+    widget.show()
     sys.exit(app.exec_())
