@@ -1,4 +1,4 @@
-import Dice
+from GameSystem import Dice
 
 
 class Diceable:

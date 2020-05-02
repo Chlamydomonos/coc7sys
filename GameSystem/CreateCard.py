@@ -1,6 +1,4 @@
-import Card
-import SkillList
-
+from GameSystem import Card, SkillList
 
 basics_number = 8
 skills_number = 60
