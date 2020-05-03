@@ -1,4 +1,6 @@
 from GameSystem import Card, SkillList
+import numpy as np
+import matplotlib.pyplot as plt
 
 basics_number = 8
 skills_number = 60

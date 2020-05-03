@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'PlayerChooseCardUI.ui'
+# Form implementation generated from reading ui file 'PlayerChooseCard_UI.ui'
 #
 # Created by: PyQt5 UI code generator 5.13.0
 #
