@@ -1,9 +1,14 @@
-from GameSystem import Card, SkillList
-import numpy as np
-import matplotlib.pyplot as plt
+from GameSystem import Card, SkillList, Dice
 
 basics_number = 8
 skills_number = 60
+
+
+def random_basics():
+    temp1 = Dice.D6 * 3
+    temp2 = Dice.D6 * 2 + 6
+    return [temp1.throw() * 5, temp1.throw() * 5, temp2.throw() * 5, temp1.throw() * 5,
+            temp1.throw() * 5, temp2.throw() * 5, temp1.throw() * 5, temp2.throw() * 5]
 
 
 def create_skills(basic_values, skill_professional_values, skill_interest_values, sub_skill_names):
