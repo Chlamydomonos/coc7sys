@@ -55,8 +55,9 @@ class Skill(Diceable):
 
 
 class Card:
-    def __init__(self, info, icon, basics, skills, luck, background, equipments, weapons, items):
-        self.info = info  # info = [姓名, 年龄, 性别（0-男，1-女）, 住地, 故乡, 职业]
+    def __init__(self, info, profession, icon, basics, skills, luck, background, equipments, weapons, items):
+        self.info = info  # info = [姓名, 年龄, 性别（0-男，1-女）, 住地, 故乡]
+        self.profession = profession
         self.icon = icon
         self.basics = basics
         self.skills = skills

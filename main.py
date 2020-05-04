@@ -20,7 +20,7 @@ def enter_create_card_step1():
 
 if __name__ == '__main__':
     main_ui.main_ui.player_mode.clicked.connect(enter_player_mode)
-    player_choose_card_ui.player_choose_card_ui.newCard.clicked.connect(enter_create_card_step1)
+    player_choose_card_ui.player_choose_card_ui.new_card.clicked.connect(enter_create_card_step1)
 
     main_ui.show()
     sys.exit(app.exec_())

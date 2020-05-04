@@ -1,5 +1,6 @@
-from PyQt5.QtWidgets import QApplication, QWidget, QDialog
+from PyQt5.QtWidgets import QWidget
 from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI
+from Core import FileIO
 
 
 class MainUI(QWidget):
@@ -9,17 +10,17 @@ class MainUI(QWidget):
         self.main_ui.setupUi(self)
 
 
-class PlayerChooseCardUI(QDialog):
+class PlayerChooseCardUI(QWidget):
     def __init__(self):
-        QDialog.__init__(self)
-        self.player_choose_card_ui = PlayerChooseCard_UI.Ui_Dialog()
+        QWidget.__init__(self)
+        self.player_choose_card_ui = PlayerChooseCard_UI.Ui_Form()
         self.player_choose_card_ui.setupUi(self)
 
 
-class CreateCardInfoUI(QDialog):
+class CreateCardInfoUI(QWidget):
     def __init__(self):
-        QDialog.__init__(self)
-        self.create_card_info_ui = CreateCardInfo_UI.Ui_Dialog()
+        QWidget.__init__(self)
+        self.create_card_info_ui = CreateCardInfo_UI.Ui_Form()
         self.create_card_info_ui.setupUi(self)
         self.create_card_info_ui.next_step.clicked.connect(self.get_info)
 
@@ -34,4 +35,5 @@ class CreateCardInfoUI(QDialog):
         age = tempui.age.value()
         living_place = tempui.living_place.text()
         homeland = tempui.homeland.text()
-        print('Suon Deea')
+        if name != '' & sex != 2 & age >= 15 & age <= 90 & living_place != '' & homeland != '':
+            FileIO.save_data('temp0.suondeea', [name, sex, age, living_place, homeland])

@@ -10,18 +10,18 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
-    def setupUi(self, Dialog):
-        Dialog.setObjectName("Dialog")
-        Dialog.resize(400, 300)
-        self.newCard = QtWidgets.QPushButton(Dialog)
-        self.newCard.setGeometry(QtCore.QRect(280, 270, 111, 23))
-        self.newCard.setObjectName("newCard")
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(400, 300)
+        self.new_card = QtWidgets.QPushButton(Form)
+        self.new_card.setGeometry(QtCore.QRect(280, 270, 111, 23))
+        self.new_card.setObjectName("new_card")
 
-        self.retranslateUi(Dialog)
-        QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
 
-    def retranslateUi(self, Dialog):
+    def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.newCard.setText(_translate("Dialog", "新建人物卡……"))
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.new_card.setText(_translate("Form", "新建人物卡……"))
