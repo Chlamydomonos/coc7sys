@@ -18,9 +18,15 @@ def enter_create_card_step1():
     player_choose_card_ui.hide()
 
 
+def enter_create_card_step2():
+    if create_card_info_ui.info_complete == 1:
+        print(create_card_info_ui.info)
+
+
 if __name__ == '__main__':
     main_ui.main_ui.player_mode.clicked.connect(enter_player_mode)
     player_choose_card_ui.player_choose_card_ui.new_card.clicked.connect(enter_create_card_step1)
+    create_card_info_ui.create_card_info_ui.next_step.clicked.connect(enter_create_card_step2)
 
     main_ui.show()
     sys.exit(app.exec_())
