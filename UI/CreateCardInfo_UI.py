@@ -102,6 +102,8 @@ class Ui_Form(object):
         self.EDU.setGeometry(QtCore.QRect(210, 80, 16, 16))
         self.EDU.setObjectName("EDU")
 
+        self.info_complete = 0
+
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 

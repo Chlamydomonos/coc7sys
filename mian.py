@@ -6,6 +6,7 @@ app = QApplication(sys.argv)
 main_ui = QtInitialize.MainUI()
 player_choose_card_ui = QtInitialize.PlayerChooseCardUI()
 create_card_info_ui = QtInitialize.CreateCardInfoUI()
+adjust_basics_ui = QtInitialize.AdjustBasicsUI()
 
 
 def enter_player_mode():
@@ -20,7 +21,9 @@ def enter_create_card_step1():
 
 def enter_create_card_step2():
     if create_card_info_ui.info_complete == 1:
-        print(create_card_info_ui.info)
+        adjust_basics_ui.show()
+        create_card_info_ui.hide()
+        adjust_basics_ui.get_info_from_last_UI(create_card_info_ui)
 
 
 if __name__ == '__main__':

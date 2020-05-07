@@ -24,14 +24,24 @@ class Diceable:
         self.very_hard = self.simple // 5
 
 
-class Skill(Diceable):
-    def __init__(self, name, initial, growth, professional, interest):
-        self.name = name
+class InitialSkill:
+    def __init__(self, main_name, branch_name, initial):
+        self.main_name = main_name
+        self.branch_name = branch_name
+        self.name = main_name + branch_name
         self.initial = initial
+
+
+class Skill(InitialSkill, Diceable):
+    def __init__(self, initial_skill, growth, professional, interest):
+        self.main_name = initial_skill.main_name
+        self.branch_name = initial_skill.branch_name
+        self.name = self.main_name + self.branch_name
+        self.initial = initial_skill.initial
         self.growth = growth
         self.professional = professional
         self.interest = interest
-        self.simple = initial + growth + professional + interest
+        self.simple = self.initial + self.growth + self.professional + self.interest
         self.hard = self.simple // 2
         self.very_hard = self.simple // 5
 

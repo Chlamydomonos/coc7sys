@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QWidget
-from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI
+from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI, AdjustBasics_UI
 from GameSystem import CreateCard
 
 
@@ -55,3 +55,16 @@ class CreateCardInfoUI(QWidget):
         if (name != '') & (sex != 2) & (age >= 15) & (age <= 90) & (living_place != '') & (homeland != ''):
             self.info_complete = 1
             self.info = [name, sex, age, living_place, homeland]
+
+
+class AdjustBasicsUI(QWidget):
+    def __init__(self):
+        QWidget.__init__(self)
+        self.adjust_basics_ui = AdjustBasics_UI.Ui_Form()
+        self.adjust_basics_ui.setupUi(self)
+        self.basics = []
+        self.info = []
+
+    def get_info_from_last_UI(self, last_UI):
+        self.basics = last_UI.basics
+        self.info = last_UI.info

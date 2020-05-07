@@ -1,3 +1,5 @@
+from GameSystem.Card import InitialSkill
+
 basics_name = ['力量(STR)', '体质(CON)', '体型(SIZ)', '敏捷(DEX)', '外貌(APP)', '智力(INT)', '意志(POW)', '教育(EDU)']
 skills_name = ['会计', '人类学', '估价', '考古学', '技艺:', '技艺:', '技艺:', '魅惑', '攀爬', '计算机使用 Ω',
                '信用评级', '克苏鲁神话', '乔装', '闪避', '汽车驾驶', '电气维修', '电子学 Ω', '话术', '格斗:斗殴', '格斗:',
@@ -15,3 +17,16 @@ skills_initial = [5, 1, 5, 1, 5, 5, 5, 15, 20, 5,
                   1, 0, 5, 20, 20, 1, 10, 1, 10, 10,
                   5, 1, 10, 1, 1, 10, 5, 1, 1, 1,
                   10, 25, 20, 10, 10, 20, 20, 10, special_sub_skill_initial, 1]
+
+art_initial_skills = {}
+
+initial_skills = [InitialSkill('会计', '', 5),
+                  InitialSkill('人类学', '', 1),
+                  InitialSkill('估价', '', 5),
+                  InitialSkill('考古学', '', 1),
+                  art_initial_skills,
+                  art_initial_skills,
+                  art_initial_skills,
+                  InitialSkill('魅惑', '', 15),
+                  InitialSkill('攀爬', '', 20),
+                  InitialSkill('计算机使用 Ω', '', 5)]
