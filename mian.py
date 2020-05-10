@@ -21,9 +21,10 @@ def enter_create_card_step1():
 
 def enter_create_card_step2():
     if create_card_info_ui.info_complete == 1:
+        adjust_basics_ui.get_info_from_last_UI(create_card_info_ui)
         adjust_basics_ui.show()
         create_card_info_ui.hide()
-        adjust_basics_ui.get_info_from_last_UI(create_card_info_ui)
+        adjust_basics_ui.initialize_UI()
 
 
 if __name__ == '__main__':

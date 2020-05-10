@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import QWidget
-from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI, AdjustBasics_UI
-from GameSystem import CreateCard
+from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI, AdjustBasics_UI,\
+    ChooseProfession_UI
+from GameSystem import CreateCard, Profession
 
 
 class MainUI(QWidget):
@@ -64,7 +65,48 @@ class AdjustBasicsUI(QWidget):
         self.adjust_basics_ui.setupUi(self)
         self.basics = []
         self.info = []
+        self.temp1 = 0
+        self.temp2 = 0
 
     def get_info_from_last_UI(self, last_UI):
         self.basics = last_UI.basics
         self.info = last_UI.info
+
+    def initialize_UI(self):
+        tempui = self.adjust_basics_ui
+        tempui.age.setText(str(self.info[2]))
+        age = self.info[2]
+        if age < 20:
+            tempui.tip.setText('力量和体型合计减 5 点。教育减 5 点。决定幸运值时可以骰 2 次并取较好的一次。')
+        elif age < 40:
+            tempui.tip.setText('对教育进行 1 次增强检定。')
+        elif age < 50:
+            tempui.tip.setText('对教育进行 2 次增强检定。力量体质敏捷合计减 5 点。外貌减 5 点。')
+        elif age < 60:
+            tempui.tip.setText('对教育进行 3 次增强检定。力量体质敏捷合计减 10 点。外貌减 10 点。')
+        elif age < 70:
+            tempui.tip.setText('对教育进行 4 次增强检定。力量体质敏捷合计减 20 点。外貌减 15 点。')
+        elif age < 80:
+            tempui.tip.setText('对教育进行 4 次增强检定。力量体质敏捷合计减 40 点。外貌减 20 点。')
+        else:
+            tempui.tip.setText('对教育进行 4 次增强检定。力量体质敏捷合计减 80 点。外貌减 25 点。')
+
+    # def set_adjustment_values(self):
+
+
+class ChooseProfessionUI(QWidget):
+    def __init__(self):
+        QWidget.__init__(self)
+        self.choose_profession_ui = ChooseProfession_UI.Ui_Form()
+        self.choose_profession_ui.setupUi(self)
+        self.basics = []
+        self.info = []
+        self.profession = Profession.Profession('', 0, 0, 0, [], [], '')
+
+    def get_info_from_last_UI(self, last_UI):
+        self.basics = last_UI.basics
+        self.info = last_UI.info
+
+    def initialize_professions(self):
+        for i in Profession.professions:
+            self.choose_profession_ui.professions.addItem(i.name)
