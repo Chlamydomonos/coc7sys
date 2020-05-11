@@ -17,10 +17,10 @@ def create_skills(basic_values, skill_professional_values, skill_interest_values
     for i in range(basics_number):
         basics.append(Card.Diceable(SkillList.basics_name[i], basic_values[i]))
     for i in range(skills_number):
-        if isinstance(SkillList.initial_skills, dict):
-            skills.append(Card.Skill(SkillList.initial_skills[i][sub_skill_names[i]], 0,
+        if isinstance(SkillList.initial_skills_list, dict):
+            skills.append(Card.Skill(SkillList.initial_skills_list[i][sub_skill_names[i]], 0,
                                      skill_professional_values[i], skill_interest_values[i]))
         else:
-            skills.append(Card.Skill(SkillList.initial_skills[i], 0,
+            skills.append(Card.Skill(SkillList.initial_skills_list[i], 0,
                                      skill_professional_values[i], skill_interest_values[i]))
     return basics, skills

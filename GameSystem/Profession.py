@@ -40,4 +40,4 @@ class AlternativeSkills:
         self.amount = amount
 
 
-professions = []
+professions = {}
