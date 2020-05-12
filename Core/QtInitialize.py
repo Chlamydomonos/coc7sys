@@ -235,10 +235,14 @@ class ChooseProfessionUI(QWidget):
         tempui = self.choose_profession_ui
         if name != '未选择':
             self.profession = Profession.read_profession(name)
+            tempui.professional_skills.setText(self.profession.get_skills_introduction())
             tempui.skill_points.setText(str(self.profession.skill_points.calculate(self.basics)))
             tempui.skill_points_introduction.setText(self.profession.skill_points.get_introduction())
             tempui.introduction.setText(self.profession.read_introduction())
             self.profession_complete = True
         else:
+            tempui.professional_skills.setText('')
+            tempui.skill_points.setText('###')
+            tempui.skill_points_introduction.setText('未定义')
             self.profession_complete = False
             tempui.introduction.setText('')

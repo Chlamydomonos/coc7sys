@@ -67,10 +67,25 @@ class Profession:
         f = open('ProfessionIntroductions\\' + self.name + '.itd', 'r')
         return f.read()
 
+    def get_skills_introduction(self):
+        temp = ''
+        for i in range(len(self.professional_skills_r3)):
+            temp += self.professional_skills_r3[i]
+            if i < len(self.professional_skills_r3) - 1:
+                temp += '，'
+        if len(self.professional_skills_r2) > 0:
+            temp += '，'
+            for i in range(len(self.professional_skills_r2)):
+                temp += self.professional_skills_r2[i].get_introduction
+                if i < len(self.professional_skills_r2) - 1:
+                    temp += '，'
+        if self.professional_skills_r1 > 0:
+            temp += '，任意' + str(self.professional_skills_r1) + '项其他技能'
+        return temp
+
 
 class AlternativeSkills:
-    def __init__(self, name, skills, amount):
-        self.name = name
+    def __init__(self, skills, amount):
         self.skills = skills
         self.amount = amount
 
@@ -85,11 +100,22 @@ class AlternativeSkills:
         else:
             return False
 
+    def get_introduction(self):
+        temp = ''
+        for i in range(len(self.skills)):
+            temp += self.skills[i]
+            if i < len(self.skills) - 1:
+                temp += '、'
+        temp += '中的' + str(self.amount) + '项'
+        return temp
+
 
 def read_profession(name):
     f = open('ProfessionList\\' + name + '.pfs', 'rb')
     return pickle.load(f)
 
 
-professions = ['会计师']
-
+professions = [
+    '会计师',
+    '杂技演员'
+]

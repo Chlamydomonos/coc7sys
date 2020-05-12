@@ -45,7 +45,7 @@ class Ui_Form(object):
         self.label_5.setGeometry(QtCore.QRect(100, 132, 21, 20))
         self.label_5.setObjectName("label_5")
         self.skill_points_introduction = QtWidgets.QLabel(Form)
-        self.skill_points_introduction.setGeometry(QtCore.QRect(130, 132, 54, 20))
+        self.skill_points_introduction.setGeometry(QtCore.QRect(130, 132, 251, 20))
         self.skill_points_introduction.setObjectName("skill_points_introduction")
 
         self.retranslateUi(Form)
