@@ -134,7 +134,7 @@
     <string>——</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="skill_points_introduction">
    <property name="geometry">
     <rect>
      <x>130</x>

@@ -24,7 +24,7 @@ class CreateCardInfoUI(QWidget):
         self.create_card_info_ui = CreateCardInfo_UI.Ui_Form()
         self.create_card_info_ui.setupUi(self)
         self.create_card_info_ui.next_step.clicked.connect(self.get_info)
-        self.info_complete = 0
+        self.info_complete = False
         self.info = []
         self.basics = []
         self.random_basics()
@@ -65,7 +65,7 @@ class CreateCardInfoUI(QWidget):
             elif self.basics[0] + self.basics[1] + self.basics[3] < 80:
                 temp_complete = 0
         if temp_complete == 1:
-            self.info_complete = 1
+            self.info_complete = True
             self.info = [name, sex, age, living_place, homeland]
 
 
@@ -78,7 +78,7 @@ class AdjustBasicsUI(QWidget):
         self.info = []
         self.temp1 = 0
         self.temp2 = 0
-        self.basics_complete = 0
+        self.basics_complete = False
 
     def get_info_from_last_UI(self, last_UI):
         self.basics = last_UI.basics
@@ -105,6 +105,7 @@ class AdjustBasicsUI(QWidget):
         elif age < 40:
             tempui.tip.setText('对教育进行 1 次增强检定。')
             self.ImproveEDU(1)
+            self.basics_complete = True
         elif age < 50:
             tempui.tip.setText('对教育进行 2 次增强检定。力量体质敏\n捷合计减 5 点。外貌减 5 点。')
             self.temp2 = 5
@@ -173,7 +174,7 @@ class AdjustBasicsUI(QWidget):
             tempui.STR.setMinimum(max(tempui.STR.value() - remaining_values, 1))
             tempui.SIZ.setMinimum(max(tempui.SIZ.value() - remaining_values, 1))
             if remaining_values == 0:
-                self.basics_complete = 1
+                self.basics_complete = True
         elif self. temp2 != 0:
             tempui.SIZ.setRange(self.basics[2], self.basics[2])
             changed_values = self.basics[0] - tempui.STR.value() + self.basics[1] - tempui.CON.value() + \
@@ -183,7 +184,7 @@ class AdjustBasicsUI(QWidget):
             tempui.CON.setMinimum(max(tempui.CON.value() - remaining_values, 1))
             tempui.DEX.setMinimum(max(tempui.DEX.value() - remaining_values, 1))
             if remaining_values == 0:
-                self.basics_complete = 1
+                self.basics_complete = True
                 self.basics = [tempui.STR.value(),
                                tempui.CON.value(),
                                tempui.SIZ.value(),
@@ -197,8 +198,8 @@ class AdjustBasicsUI(QWidget):
             tempui.CON.setRange(self.basics[1], self.basics[1])
             tempui.SIZ.setRange(self.basics[2], self.basics[2])
             tempui.DEX.setRange(self.basics[3], self.basics[3])
-            self.basics_complete = 1
-        if self.basics_complete == 1:
+            self.basics_complete = True
+        if self.basics_complete:
             self.basics = [tempui.STR.value(),
                            tempui.CON.value(),
                            tempui.SIZ.value(),
@@ -216,12 +217,28 @@ class ChooseProfessionUI(QWidget):
         self.choose_profession_ui.setupUi(self)
         self.basics = []
         self.info = []
-        self.profession = Profession.Profession('', 0, 0, 0, [], [], '')
+        self.profession = Profession.Profession('', 0, 0, 0, [], [])
+        self.initialize_professions()
+        self.choose_profession_ui.professions.currentTextChanged.connect(self.get_profession)
+        self.profession_complete = False
 
     def get_info_from_last_UI(self, last_UI):
         self.basics = last_UI.basics
         self.info = last_UI.info
 
     def initialize_professions(self):
+        self.choose_profession_ui.professions.addItem('未选择')
         for i in Profession.professions:
-            self.choose_profession_ui.professions.addItem(i.name)
+            self.choose_profession_ui.professions.addItem(i)
+
+    def get_profession(self, name):
+        tempui = self.choose_profession_ui
+        if name != '未选择':
+            self.profession = Profession.read_profession(name)
+            tempui.skill_points.setText(str(self.profession.skill_points.calculate(self.basics)))
+            tempui.skill_points_introduction.setText(self.profession.skill_points.get_introduction())
+            tempui.introduction.setText(self.profession.read_introduction())
+            self.profession_complete = True
+        else:
+            self.profession_complete = False
+            tempui.introduction.setText('')

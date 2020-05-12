@@ -1,3 +1,6 @@
+import pickle
+
+
 class SkillPoints:
     def __init__(self, STR, CON, SIZ, DEX, APP, INT, POW, EDU):
         self.STR = STR
@@ -13,24 +16,56 @@ class SkillPoints:
         return basics[0] * self.STR + basics[1] * self.CON + basics[2] * self.SIZ + basics[3] * self.DEX + \
                basics[4] * self.APP + basics[5] * self.INT + basics[6] * self.POW + basics[7] * self.EDU
 
-    def __add__(self, other):
-        return SkillPoints(self.STR + other.STR, self.CON + other.CON, self.SIZ + other.SIZ, self.DEX + other.DEX,
-                           self.APP + other.APP, self.INT + other.INT, self.POW + other.POW, self.EDU + other.EDU)
+    def get_introduction(self):
+        temp = ''
+        temp2 = ''
+        if self.STR != 0:
+            temp += '+力量*' + str(self.STR)
+        if self.CON != 0:
+            temp += '+体质*' + str(self.CON)
+        if self.SIZ != 0:
+            temp += '+体型*' + str(self.SIZ)
+        if self.DEX != 0:
+            temp += '+敏捷*' + str(self.DEX)
+        if self.APP != 0:
+            temp += '+外貌*' + str(self.APP)
+        if self.INT != 0:
+            temp += '+智力*' + str(self.INT)
+        if self.POW != 0:
+            temp += '+意志*' + str(self.POW)
+        if self.EDU != 0:
+            temp += '+教育*' + str(self.EDU)
+        for i in range(len(temp)):
+            if i > 0:
+                temp2 += temp[i]
+        return temp2
 
 
-typical_skill_points = SkillPoints(0, 0, 0, 0, 0, 0, 0, 4)
+class ComplexSkillPoints:
+    def __init__(self, way1, way2):
+        self.way1 = way1
+        self.way2 = way2
+
+    def calculate(self, basics):
+        return max(self.way1.calculate(basics), self.way2.calculate(basics))
+
+    def get_introduction(self):
+        return self.way1.get_introduction() + ' 或' + self.way2.get_introduction()
 
 
 class Profession:
     def __init__(self, name, skill_points, credit, professional_skills_r1,
-                 professional_skills_r2, professional_skills_r3, introduction):
+                 professional_skills_r2, professional_skills_r3):
         self.name = name
         self.skill_points = skill_points
         self.credit = credit
         self.professional_skills_r1 = professional_skills_r1  # amount of skills that are free to choose
         self.professional_skills_r2 = professional_skills_r2  # alternative skills
         self.professional_skills_r3 = professional_skills_r3  # fixed skills
-        self.introduction = introduction
+
+    def read_introduction(self):
+        f = open('ProfessionIntroductions\\' + self.name + '.itd', 'r')
+        return f.read()
 
 
 class AlternativeSkills:
@@ -39,5 +74,22 @@ class AlternativeSkills:
         self.skills = skills
         self.amount = amount
 
+    def check(self, skills):
+        temp = 0
+        for i in skills:
+            for j in self.skills:
+                if i == j:
+                    temp += 1
+        if temp == self.amount:
+            return True
+        else:
+            return False
 
-professions = {}
+
+def read_profession(name):
+    f = open('ProfessionList\\' + name + '.pfs', 'rb')
+    return pickle.load(f)
+
+
+professions = ['会计师']
+

@@ -44,9 +44,9 @@ class Ui_Form(object):
         self.label_5 = QtWidgets.QLabel(Form)
         self.label_5.setGeometry(QtCore.QRect(100, 132, 21, 20))
         self.label_5.setObjectName("label_5")
-        self.label_6 = QtWidgets.QLabel(Form)
-        self.label_6.setGeometry(QtCore.QRect(130, 132, 54, 20))
-        self.label_6.setObjectName("label_6")
+        self.skill_points_introduction = QtWidgets.QLabel(Form)
+        self.skill_points_introduction.setGeometry(QtCore.QRect(130, 132, 54, 20))
+        self.skill_points_introduction.setObjectName("skill_points_introduction")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -61,4 +61,4 @@ class Ui_Form(object):
         self.skill_points.setText(_translate("Form", "###"))
         self.label_4.setText(_translate("Form", "该职业的简介："))
         self.label_5.setText(_translate("Form", "——"))
-        self.label_6.setText(_translate("Form", "TextLabel"))
+        self.skill_points_introduction.setText(_translate("Form", "TextLabel"))
