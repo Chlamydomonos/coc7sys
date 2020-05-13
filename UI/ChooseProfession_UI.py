@@ -61,4 +61,4 @@ class Ui_Form(object):
         self.skill_points.setText(_translate("Form", "###"))
         self.label_4.setText(_translate("Form", "该职业的简介："))
         self.label_5.setText(_translate("Form", "——"))
-        self.skill_points_introduction.setText(_translate("Form", "TextLabel"))
+        self.skill_points_introduction.setText(_translate("Form", "未定义"))

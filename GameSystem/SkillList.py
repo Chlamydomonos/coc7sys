@@ -176,5 +176,5 @@ initial_skills_dict = {'会计': InitialSkill('会计', '', 5),
                        '投掷': InitialSkill('投掷', '', 20),
                        '追踪': InitialSkill('追踪', '', 10),
                        '罕见': special_initial_skills,
-                       '学问:': knowledge_initial_skills}
+                       '学问': knowledge_initial_skills}
 initial_skills_list = list(initial_skills_dict.values())

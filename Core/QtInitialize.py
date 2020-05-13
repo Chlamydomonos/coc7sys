@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget
 from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI, AdjustBasics_UI, \
-    ChooseProfession_UI
+    ChooseProfession_UI, ChooseProfessionalSkills_UI
 from GameSystem import CreateCard, Profession, Dice
 
 
