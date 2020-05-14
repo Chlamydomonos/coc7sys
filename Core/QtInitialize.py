@@ -1,7 +1,7 @@
 from PyQt5.QtWidgets import QWidget
 from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI, AdjustBasics_UI, \
     ChooseProfession_UI, ChooseProfessionalSkills_UI
-from GameSystem import CreateCard, Profession, Dice
+from GameSystem import CreateCard, Profession, Dice, SkillList
 
 
 class MainUI(QWidget):
@@ -246,3 +246,39 @@ class ChooseProfessionUI(QWidget):
             tempui.skill_points_introduction.setText('未定义')
             self.profession_complete = False
             tempui.introduction.setText('')
+
+
+class ChooseProfessionalSkillsUI(QWidget):
+    def __init__(self):
+        self.choose_professional_skills_ui = ChooseProfessionalSkills_UI.Ui_Form()
+        QWidget.__init__(self)
+        self.choose_professional_skills_ui.setupUi(self)
+        self.initialize_sub_skills()
+        self.info = []
+        self.basics = []
+        self.profession = Profession.Profession('', 0, [], 0, [], [])
+        self.proffesional_skills = []
+
+    def initialize_sub_skills(self):
+        tempui = self.choose_professional_skills_ui
+        tempui.sub_skill5.addItems(list(SkillList.art_initial_skills.keys()))
+        tempui.sub_skill6.addItems(list(SkillList.art_initial_skills.keys()))
+        tempui.sub_skill7.addItems(list(SkillList.art_initial_skills.keys()))
+        tempui.sub_skill20.addItems(list(SkillList.fighting_initial_skills.keys()))
+        tempui.sub_skill21.addItems(list(SkillList.fighting_initial_skills.keys()))
+        tempui.sub_skill23.addItems(list(SkillList.firearms_initial_skills.keys()))
+        tempui.sub_skill24.addItems(list(SkillList.firearms_initial_skills.keys()))
+        tempui.sub_skill29.addItems(list(SkillList.language_initial_skills.keys()))
+        tempui.sub_skill30.addItems(list(SkillList.language_initial_skills.keys()))
+        tempui.sub_skill31.addItems(list(SkillList.language_initial_skills.keys()))
+        tempui.sub_skill32.addItems(list(SkillList.mother_language_initial_skill.keys()))
+        tempui.sub_skill48.addItems(list(SkillList.science_initial_skills.keys()))
+        tempui.sub_skill49.addItems(list(SkillList.science_initial_skills.keys()))
+        tempui.sub_skill50.addItems(list(SkillList.science_initial_skills.keys()))
+        tempui.sub_skill59.addItems(list(SkillList.special_initial_skills.keys()))
+        tempui.sub_skill60.addItems(list(SkillList.knowledge_initial_skills.keys()))
+
+    def get_info_from_last_ui(self, last_UI):
+        self.info = last_UI.info
+        self.basics = last_UI.basics
+        self.profession = last_UI.profession

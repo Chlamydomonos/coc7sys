@@ -8,6 +8,7 @@ player_choose_card_ui = QtInitialize.PlayerChooseCardUI()
 create_card_info_ui = QtInitialize.CreateCardInfoUI()
 adjust_basics_ui = QtInitialize.AdjustBasicsUI()
 choose_profession_ui = QtInitialize.ChooseProfessionUI()
+choose_professional_skills_ui = QtInitialize.ChooseProfessionalSkillsUI()
 
 
 def fix_ui_position(ui1, ui2):
@@ -43,11 +44,20 @@ def enter_create_card_step3():
         adjust_basics_ui.hide()
 
 
+def enter_create_card_step4():
+    if choose_profession_ui.profession_complete:
+        choose_professional_skills_ui.get_info_from_last_ui(choose_profession_ui)
+        choose_professional_skills_ui.show()
+        fix_ui_position(choose_professional_skills_ui, choose_profession_ui)
+        choose_profession_ui.hide()
+
+
 if __name__ == '__main__':
     main_ui.main_ui.player_mode.clicked.connect(enter_player_mode)
     player_choose_card_ui.player_choose_card_ui.new_card.clicked.connect(enter_create_card_step1)
     create_card_info_ui.create_card_info_ui.next_step.clicked.connect(enter_create_card_step2)
     adjust_basics_ui.adjust_basics_ui.next_step.clicked.connect(enter_create_card_step3)
+    choose_profession_ui.choose_profession_ui.next_step.clicked.connect(enter_create_card_step4)
 
     main_ui.show()
     sys.exit(app.exec_())
