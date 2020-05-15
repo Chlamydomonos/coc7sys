@@ -257,7 +257,25 @@ class ChooseProfessionalSkillsUI(QWidget):
         self.info = []
         self.basics = []
         self.profession = Profession.Profession('', 0, [], 0, [], [])
-        self.proffesional_skills = []
+        self.professional_skills = []
+        self.check_boxes = []
+        self.initialize_skills()
+        self.choose_professional_skills_ui.next_step.clicked.connect(self.check_professional_skills)
+
+    def initialize_skills(self):
+        tempui = self.choose_professional_skills_ui
+        self.check_boxes = [tempui.skill1, tempui.skill2, tempui.skill3, tempui.skill4, tempui.skill5,
+                            tempui.skill6, tempui.skill7, tempui.skill8, tempui.skill9, tempui.skill10,
+                            tempui.skill11, tempui.skill12, tempui.skill13, tempui.skill14, tempui.skill15,
+                            tempui.skill16, tempui.skill17, tempui.skill18, tempui.skill19, tempui.skill20,
+                            tempui.skill21, tempui.skill22, tempui.skill23, tempui.skill24, tempui.skill25,
+                            tempui.skill26, tempui.skill27, tempui.skill28, tempui.skill29, tempui.skill30,
+                            tempui.skill31, tempui.skill32, tempui.skill33, tempui.skill34, tempui.skill35,
+                            tempui.skill36, tempui.skill37, tempui.skill38, tempui.skill39, tempui.skill40,
+                            tempui.skill41, tempui.skill42, tempui.skill43, tempui.skill44, tempui.skill45,
+                            tempui.skill46, tempui.skill47, tempui.skill48, tempui.skill49, tempui.skill50,
+                            tempui.skill51, tempui.skill52, tempui.skill53, tempui.skill54, tempui.skill55,
+                            tempui.skill56, tempui.skill57, tempui.skill58, tempui.skill50, tempui.skill60]
 
     def initialize_sub_skills(self):
         tempui = self.choose_professional_skills_ui
@@ -282,3 +300,16 @@ class ChooseProfessionalSkillsUI(QWidget):
         self.info = last_UI.info
         self.basics = last_UI.basics
         self.profession = last_UI.profession
+
+    def check_professional_skills(self):
+        templist = list(SkillList.initial_skills_dict.keys())
+        self.professional_skills = []
+        for i in range(len(self.check_boxes)):
+            if self.check_boxes[i].isChecked():
+                self.professional_skills.append(templist[i])
+        temp1 = len(self.profession.professional_skills_r3)
+        for i in self.profession.professional_skills_r3:
+            for j in self.professional_skills:
+                if i == j:
+                    temp1 -= 1
+        print(temp1)
