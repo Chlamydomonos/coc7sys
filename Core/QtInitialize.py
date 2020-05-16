@@ -253,14 +253,17 @@ class ChooseProfessionalSkillsUI(QWidget):
         self.choose_professional_skills_ui = ChooseProfessionalSkills_UI.Ui_Form()
         QWidget.__init__(self)
         self.choose_professional_skills_ui.setupUi(self)
-        self.initialize_sub_skills()
         self.info = []
         self.basics = []
         self.profession = Profession.Profession('', 0, [], 0, [], [])
         self.professional_skills = []
+        self.sub_skills = []
         self.check_boxes = []
+        self.combo_boxes = []
         self.initialize_skills()
+        self.initialize_sub_skills()
         self.choose_professional_skills_ui.next_step.clicked.connect(self.check_professional_skills)
+        self.skills_complete = False
 
     def initialize_skills(self):
         tempui = self.choose_professional_skills_ui
@@ -290,26 +293,65 @@ class ChooseProfessionalSkillsUI(QWidget):
         tempui.sub_skill30.addItems(list(SkillList.language_initial_skills.keys()))
         tempui.sub_skill31.addItems(list(SkillList.language_initial_skills.keys()))
         tempui.sub_skill32.addItems(list(SkillList.mother_language_initial_skill.keys()))
+        tempui.sub_skill44.addItems(list(SkillList.pilot_initial_skills.keys()))
         tempui.sub_skill48.addItems(list(SkillList.science_initial_skills.keys()))
         tempui.sub_skill49.addItems(list(SkillList.science_initial_skills.keys()))
         tempui.sub_skill50.addItems(list(SkillList.science_initial_skills.keys()))
+        tempui.sub_skill54.addItems(list(SkillList.survival_initial_skills.keys()))
+        tempui.sub_skill55.addItems(list(SkillList.survival_initial_skills.keys()))
         tempui.sub_skill59.addItems(list(SkillList.special_initial_skills.keys()))
         tempui.sub_skill60.addItems(list(SkillList.knowledge_initial_skills.keys()))
+        self.combo_boxes = [tempui.sub_skill5, tempui.sub_skill6, tempui.sub_skill7,
+                            tempui.sub_skill20, tempui.sub_skill21,
+                            tempui.sub_skill23, tempui.sub_skill24,
+                            tempui.sub_skill29, tempui.sub_skill30, tempui.sub_skill31, tempui.sub_skill32,
+                            tempui.sub_skill44,
+                            tempui.sub_skill48, tempui.sub_skill49, tempui.sub_skill50,
+                            tempui.sub_skill54, tempui.sub_skill55,
+                            tempui.sub_skill59, tempui.sub_skill60]
 
     def get_info_from_last_ui(self, last_UI):
         self.info = last_UI.info
         self.basics = last_UI.basics
         self.profession = last_UI.profession
+        self.choose_professional_skills_ui.professional_skills.setText(self.profession.get_skills_introduction())
 
     def check_professional_skills(self):
         templist = list(SkillList.initial_skills_dict.keys())
         self.professional_skills = []
+        self.skills_complete = False
         for i in range(len(self.check_boxes)):
             if self.check_boxes[i].isChecked():
                 self.professional_skills.append(templist[i])
+
         temp1 = len(self.profession.professional_skills_r3)
+        temp2 = 0
+        temp3 = self.profession.professional_skills_r1 + temp1 + temp2
+        for i in self.profession.professional_skills_r2:
+            temp2 += i.amount
+
         for i in self.profession.professional_skills_r3:
             for j in self.professional_skills:
                 if i == j:
                     temp1 -= 1
-        print(temp1)
+                elif isinstance(i, list):
+                    for k in self.combo_boxes:
+                        if k.currentText() == i[1]:
+                            temp1 -= 1
+
+        if temp1 == 0:
+            for i in self.profession.professional_skills_r2:
+                if i.check(self.professional_skills):
+                    temp2 -= i.amount
+        if temp2 == 0:
+            if len(self.professional_skills) == temp3:
+                self.skills_complete = True
+
+        temp = 0
+        for i in range(CreateCard.skills_number):
+            if isinstance(SkillList.initial_skills_list[i], dict):
+                self.sub_skills.append(self.combo_boxes[temp].currentText())
+                temp += 1
+            else:
+                self.sub_skills.append('')
+        print(self.skills_complete)

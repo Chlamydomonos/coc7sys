@@ -70,13 +70,16 @@ class Profession:
     def get_skills_introduction(self):
         temp = ''
         for i in range(len(self.professional_skills_r3)):
-            temp += self.professional_skills_r3[i]
+            if isinstance(self.professional_skills_r3[i], list):
+                temp += self.professional_skills_r3[i][0] + ':' + self.professional_skills_r3[i][1]
+            else:
+                temp += self.professional_skills_r3[i]
             if i < len(self.professional_skills_r3) - 1:
                 temp += '，'
         if len(self.professional_skills_r2) > 0:
             temp += '，'
             for i in range(len(self.professional_skills_r2)):
-                temp += self.professional_skills_r2[i].get_introduction
+                temp += self.professional_skills_r2[i].get_introduction()
                 if i < len(self.professional_skills_r2) - 1:
                     temp += '，'
         if self.professional_skills_r1 > 0:
@@ -117,5 +120,6 @@ def read_profession(name):
 
 professions = [
     '会计师',
-    '杂技演员'
+    '杂技演员',
+    '演员-戏剧演员'
 ]

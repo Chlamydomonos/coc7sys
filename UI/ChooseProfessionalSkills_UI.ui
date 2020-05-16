@@ -435,7 +435,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>驾驶</string>
+    <string>驾驶:</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="skill45">
@@ -526,7 +526,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>母语</string>
+    <string>母语:</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="skill33">
@@ -993,6 +993,36 @@
     <rect>
      <x>570</x>
      <y>190</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill54">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>270</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill55">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>290</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill44">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>370</y>
      <width>111</width>
      <height>16</height>
     </rect>

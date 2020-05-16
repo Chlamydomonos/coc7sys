@@ -15,7 +15,7 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(391, 267)
         self.professions = QtWidgets.QComboBox(Form)
-        self.professions.setGeometry(QtCore.QRect(120, 19, 131, 22))
+        self.professions.setGeometry(QtCore.QRect(120, 19, 241, 22))
         self.professions.setObjectName("professions")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(30, 20, 71, 21))
