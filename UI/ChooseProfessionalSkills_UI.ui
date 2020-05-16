@@ -430,7 +430,7 @@
     <rect>
      <x>350</x>
      <y>370</y>
-     <width>71</width>
+     <width>51</width>
      <height>16</height>
     </rect>
    </property>
@@ -811,6 +811,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="skill" stdset="0">
+    <number>5</number>
+   </property>
   </widget>
   <widget class="QComboBox" name="sub_skill6">
    <property name="geometry">
@@ -820,6 +823,9 @@
      <width>111</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>6</number>
    </property>
   </widget>
   <widget class="QComboBox" name="sub_skill7">
@@ -831,6 +837,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="skill" stdset="0">
+    <number>7</number>
+   </property>
   </widget>
   <widget class="QComboBox" name="sub_skill20">
    <property name="geometry">
@@ -840,6 +849,9 @@
      <width>101</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>20</number>
    </property>
   </widget>
   <widget class="QComboBox" name="sub_skill21">
@@ -851,6 +863,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="skill" stdset="0">
+    <number>21</number>
+   </property>
   </widget>
   <widget class="QComboBox" name="sub_skill23">
    <property name="geometry">
@@ -860,6 +875,9 @@
      <width>101</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>23</number>
    </property>
   </widget>
   <widget class="QComboBox" name="sub_skill24">
@@ -871,65 +889,8 @@
      <height>16</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill29">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>370</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill30">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>390</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill31">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>110</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill32">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>130</y>
-     <width>101</width>
-     <height>16</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill59">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>370</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill60">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>390</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
+   <property name="skill" stdset="0">
+    <number>24</number>
    </property>
   </widget>
   <widget class="QPushButton" name="next_step">
@@ -968,54 +929,30 @@
     </rect>
    </property>
   </widget>
-  <widget class="QComboBox" name="sub_skill48">
+  <widget class="QComboBox" name="sub_skill29">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>150</y>
-     <width>111</width>
+     <x>230</x>
+     <y>370</y>
+     <width>101</width>
      <height>16</height>
     </rect>
    </property>
+   <property name="skill" stdset="0">
+    <number>29</number>
+   </property>
   </widget>
-  <widget class="QComboBox" name="sub_skill49">
+  <widget class="QComboBox" name="sub_skill30">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>170</y>
-     <width>111</width>
+     <x>230</x>
+     <y>390</y>
+     <width>101</width>
      <height>16</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill50">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>190</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill54">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>270</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="sub_skill55">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>290</y>
-     <width>111</width>
-     <height>16</height>
-    </rect>
+   <property name="skill" stdset="0">
+    <number>30</number>
    </property>
   </widget>
   <widget class="QComboBox" name="sub_skill44">
@@ -1023,9 +960,129 @@
     <rect>
      <x>400</x>
      <y>370</y>
-     <width>111</width>
+     <width>101</width>
      <height>16</height>
     </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>44</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill48">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>150</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>48</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill49">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>170</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>49</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill50">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>190</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>50</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill54">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>270</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>54</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill55">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>290</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>55</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill59">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>370</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>59</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill60">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>390</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>60</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill31">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>110</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>31</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="sub_skill32">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>130</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="skill" stdset="0">
+    <number>32</number>
    </property>
   </widget>
  </widget>

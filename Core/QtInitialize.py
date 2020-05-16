@@ -282,6 +282,16 @@ class ChooseProfessionalSkillsUI(QWidget):
 
     def initialize_sub_skills(self):
         tempui = self.choose_professional_skills_ui
+        self.combo_boxes = [tempui.sub_skill5, tempui.sub_skill6, tempui.sub_skill7,
+                            tempui.sub_skill20, tempui.sub_skill21,
+                            tempui.sub_skill23, tempui.sub_skill24,
+                            tempui.sub_skill29, tempui.sub_skill30, tempui.sub_skill31, tempui.sub_skill32,
+                            tempui.sub_skill44,
+                            tempui.sub_skill48, tempui.sub_skill49, tempui.sub_skill50,
+                            tempui.sub_skill54, tempui.sub_skill55,
+                            tempui.sub_skill59, tempui.sub_skill60]
+        for i in self.combo_boxes:
+            i.addItem('无')
         tempui.sub_skill5.addItems(list(SkillList.art_initial_skills.keys()))
         tempui.sub_skill6.addItems(list(SkillList.art_initial_skills.keys()))
         tempui.sub_skill7.addItems(list(SkillList.art_initial_skills.keys()))
@@ -301,14 +311,6 @@ class ChooseProfessionalSkillsUI(QWidget):
         tempui.sub_skill55.addItems(list(SkillList.survival_initial_skills.keys()))
         tempui.sub_skill59.addItems(list(SkillList.special_initial_skills.keys()))
         tempui.sub_skill60.addItems(list(SkillList.knowledge_initial_skills.keys()))
-        self.combo_boxes = [tempui.sub_skill5, tempui.sub_skill6, tempui.sub_skill7,
-                            tempui.sub_skill20, tempui.sub_skill21,
-                            tempui.sub_skill23, tempui.sub_skill24,
-                            tempui.sub_skill29, tempui.sub_skill30, tempui.sub_skill31, tempui.sub_skill32,
-                            tempui.sub_skill44,
-                            tempui.sub_skill48, tempui.sub_skill49, tempui.sub_skill50,
-                            tempui.sub_skill54, tempui.sub_skill55,
-                            tempui.sub_skill59, tempui.sub_skill60]
 
     def get_info_from_last_ui(self, last_UI):
         self.info = last_UI.info
@@ -326,18 +328,19 @@ class ChooseProfessionalSkillsUI(QWidget):
 
         temp1 = len(self.profession.professional_skills_r3)
         temp2 = 0
-        temp3 = self.profession.professional_skills_r1 + temp1 + temp2
         for i in self.profession.professional_skills_r2:
             temp2 += i.amount
+        temp3 = self.profession.professional_skills_r1 + temp1 + temp2
 
         for i in self.profession.professional_skills_r3:
-            for j in self.professional_skills:
-                if i == j:
-                    temp1 -= 1
-                elif isinstance(i, list):
-                    for k in self.combo_boxes:
-                        if k.currentText() == i[1]:
-                            temp1 -= 1
+            if isinstance(i, list):
+                for k in self.combo_boxes:
+                    if (k.currentText() == i[1]) & (self.check_boxes[int(k.property('skill')) - 1].isChecked()):
+                        temp1 -= 1
+            else:
+                for j in self.professional_skills:
+                    if i == j:
+                        temp1 -= 1
 
         if temp1 == 0:
             for i in self.profession.professional_skills_r2:
@@ -347,6 +350,10 @@ class ChooseProfessionalSkillsUI(QWidget):
             if len(self.professional_skills) == temp3:
                 self.skills_complete = True
 
+        for i in self.combo_boxes:
+            if (i.currentText() == '无') & (self.check_boxes[i.property('skill') - 1].isChecked()):
+                self.skills_complete = False
+
         temp = 0
         for i in range(CreateCard.skills_number):
             if isinstance(SkillList.initial_skills_list[i], dict):
@@ -354,4 +361,3 @@ class ChooseProfessionalSkillsUI(QWidget):
                 temp += 1
             else:
                 self.sub_skills.append('')
-        print(self.skills_complete)

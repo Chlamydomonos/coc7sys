@@ -98,7 +98,7 @@ class AlternativeSkills:
             for j in self.skills:
                 if i == j:
                     temp += 1
-        if temp == self.amount:
+        if temp >= self.amount:
             return True
         else:
             return False
