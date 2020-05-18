@@ -175,7 +175,7 @@ class AdjustBasicsUI(QWidget):
             tempui.SIZ.setMinimum(max(tempui.SIZ.value() - remaining_values, 1))
             if remaining_values == 0:
                 self.basics_complete = True
-        elif self. temp2 != 0:
+        elif self.temp2 != 0:
             tempui.SIZ.setRange(self.basics[2], self.basics[2])
             changed_values = self.basics[0] - tempui.STR.value() + self.basics[1] - tempui.CON.value() + \
                              self.basics[3] - tempui.DEX.value()
@@ -320,6 +320,7 @@ class ChooseProfessionalSkillsUI(QWidget):
 
     def check_professional_skills(self):
         templist = list(SkillList.initial_skills_dict.keys())
+        tempui = self.choose_professional_skills_ui
         self.professional_skills = []
         self.skills_complete = False
         for i in range(len(self.check_boxes)):
@@ -353,6 +354,12 @@ class ChooseProfessionalSkillsUI(QWidget):
         for i in self.combo_boxes:
             if (i.currentText() == '无') & (self.check_boxes[i.property('skill') - 1].isChecked()):
                 self.skills_complete = False
+            for j in self.combo_boxes:
+                if (i.currentText() == j.currentText()) & (i.currentText() != '无') & (i.property('skill') !=
+                                                                                      j.property('skill')):
+                    self.skills_complete = False
+        if tempui.skill11.isChecked() | tempui.skill12.isChecked():
+            self.skills_complete = False
 
         temp = 0
         for i in range(CreateCard.skills_number):
