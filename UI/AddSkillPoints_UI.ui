@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>679</width>
-    <height>455</height>
+    <height>488</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>50</y>
+     <y>80</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>70</y>
+     <y>100</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -43,7 +43,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>90</y>
+     <y>120</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -56,7 +56,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>110</y>
+     <y>140</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -69,7 +69,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>130</y>
+     <y>160</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -82,7 +82,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>190</y>
+     <y>220</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -95,7 +95,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>210</y>
+     <y>240</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -108,7 +108,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>230</y>
+     <y>260</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -121,7 +121,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>250</y>
+     <y>280</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -134,7 +134,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>270</y>
+     <y>300</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -147,7 +147,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>290</y>
+     <y>320</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -160,7 +160,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>310</y>
+     <y>340</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -173,7 +173,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>330</y>
+     <y>360</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -186,7 +186,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>350</y>
+     <y>380</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -199,7 +199,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>370</y>
+     <y>400</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -212,7 +212,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>390</y>
+     <y>420</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -225,7 +225,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>410</y>
+     <y>440</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -238,7 +238,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>370</y>
+     <y>400</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -251,7 +251,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>390</y>
+     <y>420</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -264,7 +264,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>190</y>
+     <y>220</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -277,7 +277,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>330</y>
+     <y>360</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -290,7 +290,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>310</y>
+     <y>340</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -303,7 +303,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>150</y>
+     <y>180</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -316,7 +316,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>130</y>
+     <y>160</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -329,7 +329,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>70</y>
+     <y>100</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -342,7 +342,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>350</y>
+     <y>380</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -355,7 +355,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>430</y>
+     <y>460</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -368,7 +368,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>410</y>
+     <y>440</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -381,7 +381,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>290</y>
+     <y>320</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -394,7 +394,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>170</y>
+     <y>200</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -407,7 +407,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>350</y>
+     <y>380</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -420,7 +420,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>230</y>
+     <y>260</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -433,7 +433,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>370</y>
+     <y>400</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -446,7 +446,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>250</y>
+     <y>280</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -459,7 +459,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>130</y>
+     <y>160</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -472,7 +472,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>110</y>
+     <y>140</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -485,7 +485,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>50</y>
+     <y>80</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -498,7 +498,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>70</y>
+     <y>100</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -511,7 +511,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>330</y>
+     <y>360</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -524,7 +524,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>270</y>
+     <y>300</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -537,7 +537,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>30</y>
+     <y>60</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -550,7 +550,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>150</y>
+     <y>180</y>
      <width>54</width>
      <height>16</height>
     </rect>
@@ -559,1201 +559,1201 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox">
+  <widget class="QSpinBox" name="pr1">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>50</y>
+     <y>80</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_2">
+  <widget class="QSpinBox" name="in1">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>50</y>
+     <y>80</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_3">
+  <widget class="QSpinBox" name="pr2">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>70</y>
+     <y>100</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_4">
+  <widget class="QSpinBox" name="in2">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>70</y>
+     <y>100</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_5">
+  <widget class="QSpinBox" name="pr3">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>90</y>
+     <y>120</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_6">
+  <widget class="QSpinBox" name="in3">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>90</y>
+     <y>120</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_7">
+  <widget class="QSpinBox" name="pr4">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>110</y>
+     <y>140</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_8">
+  <widget class="QSpinBox" name="in4">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>110</y>
+     <y>140</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_9">
+  <widget class="QSpinBox" name="pr5">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>130</y>
+     <y>160</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_10">
+  <widget class="QSpinBox" name="in5">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>130</y>
+     <y>160</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_11">
+  <widget class="QSpinBox" name="pr6">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>150</y>
+     <y>180</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_12">
+  <widget class="QSpinBox" name="in6">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>150</y>
+     <y>180</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_13">
+  <widget class="QSpinBox" name="pr7">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>170</y>
+     <y>200</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_14">
+  <widget class="QSpinBox" name="in7">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>170</y>
+     <y>200</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_15">
+  <widget class="QSpinBox" name="pr8">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>190</y>
+     <y>220</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_16">
+  <widget class="QSpinBox" name="in8">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>190</y>
+     <y>220</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_17">
+  <widget class="QSpinBox" name="pr9">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>210</y>
+     <y>240</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_18">
+  <widget class="QSpinBox" name="in9">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>210</y>
+     <y>240</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_19">
+  <widget class="QSpinBox" name="pr10">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>230</y>
+     <y>260</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_20">
+  <widget class="QSpinBox" name="in10">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>230</y>
+     <y>260</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_21">
+  <widget class="QSpinBox" name="pr11">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>250</y>
+     <y>280</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_22">
+  <widget class="QSpinBox" name="in11">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>250</y>
+     <y>280</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_23">
+  <widget class="QSpinBox" name="pr12">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>270</y>
+     <y>300</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_24">
+  <widget class="QSpinBox" name="in12">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>270</y>
+     <y>300</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_25">
+  <widget class="QSpinBox" name="pr13">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>290</y>
+     <y>320</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_26">
+  <widget class="QSpinBox" name="in13">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>290</y>
+     <y>320</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_27">
+  <widget class="QSpinBox" name="pr14">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>310</y>
+     <y>340</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_28">
+  <widget class="QSpinBox" name="in14">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>310</y>
+     <y>340</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_29">
+  <widget class="QSpinBox" name="pr15">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>330</y>
+     <y>360</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_30">
+  <widget class="QSpinBox" name="in15">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>330</y>
+     <y>360</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_31">
+  <widget class="QSpinBox" name="pr16">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>350</y>
+     <y>380</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_32">
+  <widget class="QSpinBox" name="in16">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>350</y>
+     <y>380</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_33">
+  <widget class="QSpinBox" name="pr17">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>370</y>
+     <y>400</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_34">
+  <widget class="QSpinBox" name="in17">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>370</y>
+     <y>400</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_35">
+  <widget class="QSpinBox" name="pr18">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>390</y>
+     <y>420</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_36">
+  <widget class="QSpinBox" name="in18">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>390</y>
+     <y>420</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_37">
+  <widget class="QSpinBox" name="pr19">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>410</y>
+     <y>440</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_38">
+  <widget class="QSpinBox" name="in19">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>410</y>
+     <y>440</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_39">
+  <widget class="QSpinBox" name="pr20">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>430</y>
+     <y>460</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_40">
+  <widget class="QSpinBox" name="in20">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>430</y>
+     <y>460</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_41">
+  <widget class="QSpinBox" name="pr39">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>410</y>
+     <y>440</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_42">
+  <widget class="QSpinBox" name="pr35">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>330</y>
+     <y>360</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_43">
+  <widget class="QSpinBox" name="in39">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>410</y>
+     <y>440</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_44">
+  <widget class="QSpinBox" name="in22">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>70</y>
+     <y>100</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_45">
+  <widget class="QSpinBox" name="pr29">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>210</y>
+     <y>240</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_46">
+  <widget class="QSpinBox" name="pr32">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>270</y>
+     <y>300</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_47">
+  <widget class="QSpinBox" name="pr31">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>250</y>
+     <y>280</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_48">
+  <widget class="QSpinBox" name="in37">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>370</y>
+     <y>400</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_49">
+  <widget class="QSpinBox" name="pr27">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>170</y>
+     <y>200</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_50">
+  <widget class="QSpinBox" name="pr28">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>190</y>
+     <y>220</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_51">
+  <widget class="QSpinBox" name="pr21">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>50</y>
+     <y>80</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_52">
+  <widget class="QSpinBox" name="pr36">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>350</y>
+     <y>380</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_53">
+  <widget class="QSpinBox" name="in36">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>350</y>
+     <y>380</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_54">
+  <widget class="QSpinBox" name="in29">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>210</y>
+     <y>240</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_55">
+  <widget class="QSpinBox" name="pr24">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>110</y>
+     <y>140</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_56">
+  <widget class="QSpinBox" name="pr37">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>370</y>
+     <y>400</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_57">
+  <widget class="QSpinBox" name="in40">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>430</y>
+     <y>460</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_58">
+  <widget class="QSpinBox" name="in27">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>170</y>
+     <y>200</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_59">
+  <widget class="QSpinBox" name="in23">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>90</y>
+     <y>120</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_60">
+  <widget class="QSpinBox" name="pr26">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>150</y>
+     <y>180</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_61">
+  <widget class="QSpinBox" name="in38">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>390</y>
+     <y>420</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_62">
+  <widget class="QSpinBox" name="in21">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>50</y>
+     <y>80</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_63">
+  <widget class="QSpinBox" name="pr34">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>310</y>
+     <y>340</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_64">
+  <widget class="QSpinBox" name="pr38">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>390</y>
+     <y>420</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_65">
+  <widget class="QSpinBox" name="pr33">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>290</y>
+     <y>320</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_66">
+  <widget class="QSpinBox" name="in35">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>330</y>
+     <y>360</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_67">
+  <widget class="QSpinBox" name="in25">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>130</y>
+     <y>160</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_68">
+  <widget class="QSpinBox" name="pr22">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>70</y>
+     <y>100</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_69">
+  <widget class="QSpinBox" name="in28">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>190</y>
+     <y>220</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_70">
+  <widget class="QSpinBox" name="in32">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>270</y>
+     <y>300</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_71">
+  <widget class="QSpinBox" name="in31">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>250</y>
+     <y>280</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_72">
+  <widget class="QSpinBox" name="pr40">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>430</y>
+     <y>460</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_73">
+  <widget class="QSpinBox" name="pr25">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>130</y>
+     <y>160</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_74">
+  <widget class="QSpinBox" name="pr23">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>90</y>
+     <y>120</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_75">
+  <widget class="QSpinBox" name="in34">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>310</y>
+     <y>340</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_76">
+  <widget class="QSpinBox" name="in24">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>110</y>
+     <y>140</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_77">
+  <widget class="QSpinBox" name="in30">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>230</y>
+     <y>260</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_78">
+  <widget class="QSpinBox" name="pr30">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>230</y>
+     <y>260</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_79">
+  <widget class="QSpinBox" name="in26">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>150</y>
+     <y>180</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_80">
+  <widget class="QSpinBox" name="in33">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>290</y>
+     <y>320</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_81">
+  <widget class="QSpinBox" name="pr59">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>390</y>
+     <y>420</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_82">
+  <widget class="QSpinBox" name="pr55">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>310</y>
+     <y>340</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_83">
+  <widget class="QSpinBox" name="in59">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>390</y>
+     <y>420</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_84">
+  <widget class="QSpinBox" name="in42">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>50</y>
+     <y>80</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_85">
+  <widget class="QSpinBox" name="pr49">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>190</y>
+     <y>220</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_86">
+  <widget class="QSpinBox" name="pr52">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>250</y>
+     <y>280</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_87">
+  <widget class="QSpinBox" name="pr51">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>230</y>
+     <y>260</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_88">
+  <widget class="QSpinBox" name="in57">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>350</y>
+     <y>380</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_89">
+  <widget class="QSpinBox" name="pr47">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>150</y>
+     <y>180</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_90">
+  <widget class="QSpinBox" name="pr48">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>170</y>
+     <y>200</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_91">
+  <widget class="QSpinBox" name="pr41">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>30</y>
+     <y>60</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_92">
+  <widget class="QSpinBox" name="pr56">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>330</y>
+     <y>360</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_93">
+  <widget class="QSpinBox" name="in56">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>330</y>
+     <y>360</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_94">
+  <widget class="QSpinBox" name="in49">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>190</y>
+     <y>220</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_95">
+  <widget class="QSpinBox" name="pr44">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>90</y>
+     <y>120</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_96">
+  <widget class="QSpinBox" name="pr57">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>350</y>
+     <y>380</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_97">
+  <widget class="QSpinBox" name="in60">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>410</y>
+     <y>440</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_98">
+  <widget class="QSpinBox" name="in47">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>150</y>
+     <y>180</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_99">
+  <widget class="QSpinBox" name="in43">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>70</y>
+     <y>100</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_100">
+  <widget class="QSpinBox" name="pr46">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>130</y>
+     <y>160</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_101">
+  <widget class="QSpinBox" name="in58">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>370</y>
+     <y>400</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_102">
+  <widget class="QSpinBox" name="in41">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>30</y>
+     <y>60</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_103">
+  <widget class="QSpinBox" name="pr54">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>290</y>
+     <y>320</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_104">
+  <widget class="QSpinBox" name="pr58">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>370</y>
+     <y>400</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_105">
+  <widget class="QSpinBox" name="pr53">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>270</y>
+     <y>300</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_106">
+  <widget class="QSpinBox" name="in55">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>310</y>
+     <y>340</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_107">
+  <widget class="QSpinBox" name="in45">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>110</y>
+     <y>140</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_108">
+  <widget class="QSpinBox" name="pr42">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>50</y>
+     <y>80</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_109">
+  <widget class="QSpinBox" name="in48">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>170</y>
+     <y>200</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_110">
+  <widget class="QSpinBox" name="in52">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>250</y>
+     <y>280</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_111">
+  <widget class="QSpinBox" name="in51">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>230</y>
+     <y>260</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_112">
+  <widget class="QSpinBox" name="pr60">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>410</y>
+     <y>440</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_113">
+  <widget class="QSpinBox" name="pr45">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>110</y>
+     <y>140</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_114">
+  <widget class="QSpinBox" name="pr43">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>70</y>
+     <y>100</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_115">
+  <widget class="QSpinBox" name="in54">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>290</y>
+     <y>320</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_116">
+  <widget class="QSpinBox" name="in44">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>90</y>
+     <y>120</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_117">
+  <widget class="QSpinBox" name="in50">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>210</y>
+     <y>240</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_118">
+  <widget class="QSpinBox" name="pr50">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>210</y>
+     <y>240</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_119">
+  <widget class="QSpinBox" name="in46">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>130</y>
+     <y>160</y>
      <width>42</width>
      <height>16</height>
     </rect>
    </property>
   </widget>
-  <widget class="QSpinBox" name="spinBox_120">
+  <widget class="QSpinBox" name="in53">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>270</y>
+     <y>300</y>
      <width>42</width>
      <height>16</height>
     </rect>
@@ -1763,7 +1763,7 @@
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>430</y>
+     <y>460</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1776,7 +1776,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>150</y>
+     <y>180</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1789,7 +1789,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>170</y>
+     <y>200</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1802,7 +1802,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>430</y>
+     <y>460</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1815,7 +1815,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>50</y>
+     <y>80</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1828,7 +1828,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>90</y>
+     <y>120</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1841,7 +1841,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>110</y>
+     <y>140</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1854,7 +1854,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>210</y>
+     <y>240</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1867,7 +1867,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>230</y>
+     <y>260</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1880,7 +1880,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>250</y>
+     <y>280</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1893,7 +1893,7 @@
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>270</y>
+     <y>300</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1906,7 +1906,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>90</y>
+     <y>120</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1919,7 +1919,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>170</y>
+     <y>200</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1932,7 +1932,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>190</y>
+     <y>220</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1945,7 +1945,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>210</y>
+     <y>240</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1958,7 +1958,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>290</y>
+     <y>320</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1971,7 +1971,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>310</y>
+     <y>340</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1984,7 +1984,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>390</y>
+     <y>420</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -1997,7 +1997,7 @@
    <property name="geometry">
     <rect>
      <x>460</x>
-     <y>410</y>
+     <y>440</y>
      <width>31</width>
      <height>16</height>
     </rect>
@@ -2006,11 +2006,11 @@
     <string>技艺:</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_61">
+  <widget class="QLabel" name="sub_skill5">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>130</y>
+     <y>160</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2019,11 +2019,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_62">
+  <widget class="QLabel" name="sub_skill6">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>150</y>
+     <y>180</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2032,11 +2032,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_63">
+  <widget class="QLabel" name="sub_skill7">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>170</y>
+     <y>200</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2045,11 +2045,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_64">
+  <widget class="QLabel" name="sub_skill20">
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>430</y>
+     <y>460</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2058,11 +2058,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_65">
+  <widget class="QLabel" name="sub_skill21">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>50</y>
+     <y>80</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2071,11 +2071,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_66">
+  <widget class="QLabel" name="sub_skill23">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>90</y>
+     <y>120</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2084,11 +2084,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_67">
+  <widget class="QLabel" name="sub_skill24">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>110</y>
+     <y>140</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -2097,11 +2097,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_68">
+  <widget class="QLabel" name="sub_skill29">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>210</y>
+     <y>240</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2110,11 +2110,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_69">
+  <widget class="QLabel" name="sub_skill30">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>230</y>
+     <y>260</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2123,11 +2123,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_70">
+  <widget class="QLabel" name="sub_skill31">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>250</y>
+     <y>280</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2136,11 +2136,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_71">
+  <widget class="QLabel" name="sub_skill32">
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>270</y>
+     <y>300</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2149,11 +2149,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_72">
+  <widget class="QLabel" name="sub_skill44">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>90</y>
+     <y>120</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2162,11 +2162,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_73">
+  <widget class="QLabel" name="sub_skill49">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>170</y>
+     <y>220</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2175,11 +2175,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_74">
+  <widget class="QLabel" name="sub_skill50">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>190</y>
+     <y>240</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2188,11 +2188,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_75">
+  <widget class="QLabel" name="sub_skill54">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>210</y>
+     <y>320</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2201,11 +2201,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_76">
+  <widget class="QLabel" name="sub_skill55">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>290</y>
+     <y>340</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2214,11 +2214,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_77">
+  <widget class="QLabel" name="sub_skill59">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>310</y>
+     <y>420</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2227,24 +2227,11 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_78">
+  <widget class="QLabel" name="sub_skill60">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>390</y>
-     <width>91</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_79">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>410</y>
+     <y>440</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -2258,85 +2245,173 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>54</width>
-     <height>12</height>
+     <width>71</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>请分配技能点</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_81">
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>30</y>
+     <y>60</y>
      <width>31</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>职业</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_82">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>30</y>
+     <y>60</y>
      <width>31</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>兴趣</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_83">
    <property name="geometry">
     <rect>
      <x>370</x>
-     <y>30</y>
+     <y>60</y>
      <width>31</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>职业</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_84">
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>30</y>
+     <y>60</y>
      <width>31</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>兴趣</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_85">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>10</y>
+     <y>40</y>
      <width>31</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>职业</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_86">
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>10</y>
+     <y>40</y>
      <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>兴趣</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_87">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>剩余职业技能点：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="professional_points">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>40</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>###</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_89">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>剩余兴趣技能点：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="interest_points">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>40</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>###</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="professional_skills">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>10</y>
+     <width>256</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_88">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>本职技能：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sub_skill48">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>200</y>
+     <width>91</width>
      <height>16</height>
     </rect>
    </property>

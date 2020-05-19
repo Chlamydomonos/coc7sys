@@ -68,6 +68,9 @@ class CreateCardInfoUI(QWidget):
             self.info_complete = True
             self.info = [name, sex, age, living_place, homeland]
 
+    def complete(self):
+        return self.info_complete
+
 
 class AdjustBasicsUI(QWidget):
     def __init__(self):
@@ -209,6 +212,9 @@ class AdjustBasicsUI(QWidget):
                            tempui.POW.value(),
                            tempui.EDU.value()]
 
+    def complete(self):
+        return self.basics_complete
+
 
 class ChooseProfessionUI(QWidget):
     def __init__(self):
@@ -246,6 +252,9 @@ class ChooseProfessionUI(QWidget):
             tempui.skill_points_introduction.setText('未定义')
             self.profession_complete = False
             tempui.introduction.setText('')
+
+    def complete(self):
+        return self.profession_complete
 
 
 class ChooseProfessionalSkillsUI(QWidget):
@@ -368,3 +377,6 @@ class ChooseProfessionalSkillsUI(QWidget):
                 temp += 1
             else:
                 self.sub_skills.append('')
+
+    def complete(self):
+        return self.skills_complete
