@@ -28,20 +28,23 @@ art_initial_skills = {'表演': InitialSkill('技艺:', '表演', 5),
                       '莫里斯舞蹈': InitialSkill('技艺:', '莫里斯舞蹈', 5),
                       '粉刷/油漆工': InitialSkill('技艺:', '粉刷/油漆工', 5),
                       '锻造': InitialSkill('技艺:', '锻造', 5),
-                      '乐器': InitialSkill('技艺:', '乐器', 5)}
+                      '乐器': InitialSkill('技艺:', '乐器', 5),
+                      '无': InitialSkill('无', '', 0)}
 fighting_initial_skills = {'鞭子': InitialSkill('格斗:', '鞭子', 5),
                            '电锯': InitialSkill('格斗:', '电锯', 10),
                            '斧': InitialSkill('格斗:', '斧', 15),
                            '剑': InitialSkill('格斗:', '剑', 20),
                            '绞索': InitialSkill('格斗:', '绞索', 15),
                            '链枷': InitialSkill('格斗:', '链枷', 10),
-                           '矛': InitialSkill('格斗:', '矛', 20)}
+                           '矛': InitialSkill('格斗:', '矛', 20),
+                           '无': InitialSkill('无', '', 0)}
 firearms_initial_skills = {'步枪/霰弹枪': InitialSkill('射击:', '步枪/霰弹枪', 25),
                            '冲锋枪': InitialSkill('射击:', '冲锋枪', 15),
                            '弓术': InitialSkill('射击:', '弓术', 15),
                            '火焰喷射器': InitialSkill('射击:', '火焰喷射器', 10),
                            '机枪': InitialSkill('射击:', '机枪', 10),
-                           '重武器': InitialSkill('射击:', '重武器', 10)}
+                           '重武器': InitialSkill('射击:', '重武器', 10),
+                           '无': InitialSkill('无', '', 0)}
 language_initial_skills = {'英语': InitialSkill('语言:', '英语', 1),
                            '汉语': InitialSkill('语言:', '汉语', 1),
                            '日语': InitialSkill('语言:', '日语', 1),
@@ -57,7 +60,8 @@ language_initial_skills = {'英语': InitialSkill('语言:', '英语', 1),
                            '朝鲜语': InitialSkill('语言:', '朝鲜语', 1),
                            '印地语': InitialSkill('语言:', '印地语', 1),
                            '藏语': InitialSkill('语言:', '藏语', 1),
-                           '蒙古语': InitialSkill('语言:', '蒙古语', 1)}
+                           '蒙古语': InitialSkill('语言:', '蒙古语', 1),
+                           '无': InitialSkill('无', '', 0)}
 mother_language_initial_skill = {'英语': InitialSkill('母语:', '英语', 1),
                                  '汉语': InitialSkill('母语:', '汉语', 1),
                                  '日语': InitialSkill('母语:', '日语', 1),
@@ -73,9 +77,11 @@ mother_language_initial_skill = {'英语': InitialSkill('母语:', '英语', 1),
                                  '朝鲜语': InitialSkill('母语:', '朝鲜语', 1),
                                  '印地语': InitialSkill('母语:', '印地语', 1),
                                  '藏语': InitialSkill('母语:', '藏语', 1),
-                                 '蒙古语': InitialSkill('母语:', '蒙古语', 1)}
+                                 '蒙古语': InitialSkill('母语:', '蒙古语', 1),
+                                 '无': InitialSkill('无', '', 0)}
 pilot_initial_skills = {'飞行器': InitialSkill('驾驶:', '飞行器', 1),
-                        '船': InitialSkill('驾驶:', '船', 1)}
+                        '船': InitialSkill('驾驶:', '船', 1),
+                        '无': InitialSkill('无', '', 0)}
 science_initial_skills = {'地质学': InitialSkill('科学:', '地质学', 1),
                           '化学': InitialSkill('科学:', '化学', 1),
                           '生物学': InitialSkill('科学:', '生物学', 1),
@@ -88,7 +94,8 @@ science_initial_skills = {'地质学': InitialSkill('科学:', '地质学', 1),
                           '密码学': InitialSkill('科学:', '密码学', 1),
                           '工程学': InitialSkill('科学:', '工程学', 1),
                           '气象学': InitialSkill('科学:', '气象学', 1),
-                          '司法科学': InitialSkill('科学:', '司法科学', 1)}
+                          '司法科学': InitialSkill('科学:', '司法科学', 1),
+                          '无': InitialSkill('无', '', 0)}
 survival_initial_skills = {'荒野': InitialSkill('生存:', '荒野', 10),
                            '沙漠': InitialSkill('生存:', '沙漠', 10),
                            '极地': InitialSkill('生存:', '极地', 10),
@@ -97,13 +104,15 @@ survival_initial_skills = {'荒野': InitialSkill('生存:', '荒野', 10),
                            '孤岛': InitialSkill('生存:', '孤岛', 10),
                            '原始森林': InitialSkill('生存:', '原始森林', 10),
                            '废土': InitialSkill('生存:', '废土', 10),
-                           '沼泽': InitialSkill('生存:', '沼泽', 10)}
+                           '沼泽': InitialSkill('生存:', '沼泽', 10),
+                           '无': InitialSkill('无', '', 0)}
 special_initial_skills = {'爆破': InitialSkill('罕见:', '爆破', 1),
                           '催眠': InitialSkill('罕见:', '催眠', 1),
                           '读唇': InitialSkill('罕见:', '读唇', 1),
                           '炮术': InitialSkill('罕见:', '炮术', 1),
                           '潜水': InitialSkill('罕见:', '潜水', 1),
-                          '驯兽': InitialSkill('罕见:', '驯兽', 5)}
+                          '驯兽': InitialSkill('罕见:', '驯兽', 5),
+                          '无': InitialSkill('无', '', 0)}
 knowledge_initial_skills = {'梦学问': InitialSkill('学问:', '梦学问', 1),
                             '死灵之书学问': InitialSkill('学问:', '死灵之书学问', 1),
                             'UFO学问': InitialSkill('学问:', 'UFO学问', 1),
@@ -115,7 +124,8 @@ knowledge_initial_skills = {'梦学问': InitialSkill('学问:', '梦学问', 1)
                             '狼人学问': InitialSkill('学问:', '狼人学问', 1),
                             '亚迪斯星人学问': InitialSkill('学问:', '亚迪斯星人学问', 1),
                             '都市传说学问': InitialSkill('学问:', '都市传说学问', 1),
-                            '中国鬼怪学问': InitialSkill('学问:', '中国鬼怪学问', 1)}
+                            '中国鬼怪学问': InitialSkill('学问:', '中国鬼怪学问', 1),
+                            '无': InitialSkill('无', '', 0)}
 
 initial_skills_dict = {'会计': InitialSkill('会计', '', 5),
                        '人类学': InitialSkill('人类学', '', 1),

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>306</width>
-    <height>240</height>
+    <height>241</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -223,6 +223,9 @@
    </property>
   </widget>
   <widget class="QSpinBox" name="APP">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -233,6 +236,9 @@
    </property>
   </widget>
   <widget class="QSpinBox" name="INT">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -243,6 +249,9 @@
    </property>
   </widget>
   <widget class="QSpinBox" name="POW">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -253,6 +262,9 @@
    </property>
   </widget>
   <widget class="QSpinBox" name="EDU">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>220</x>

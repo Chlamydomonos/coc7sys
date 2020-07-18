@@ -9,6 +9,7 @@ create_card_info_ui = QtInitialize.CreateCardInfoUI()
 adjust_basics_ui = QtInitialize.AdjustBasicsUI()
 choose_profession_ui = QtInitialize.ChooseProfessionUI()
 choose_professional_skills_ui = QtInitialize.ChooseProfessionalSkillsUI()
+add_skill_points_ui = QtInitialize.AddSkillPointsUI()
 
 
 def fix_ui_position(ui1, ui2):
@@ -38,7 +39,7 @@ def enter_create_card_step2():
 
 def enter_create_card_step3():
     if adjust_basics_ui.basics_complete:
-        choose_profession_ui.get_info_from_last_UI(adjust_basics_ui)
+        choose_profession_ui.get_info_from_last_ui(adjust_basics_ui)
         choose_profession_ui.show()
         fix_ui_position(choose_profession_ui, adjust_basics_ui)
         adjust_basics_ui.hide()
@@ -54,7 +55,10 @@ def enter_create_card_step4():
 
 def enter_create_card_step5():
     if choose_professional_skills_ui.skills_complete:
-        print('Suon Deea')
+        add_skill_points_ui.show()
+        fix_ui_position(add_skill_points_ui, choose_professional_skills_ui)
+        add_skill_points_ui.get_info_from_last_ui(choose_professional_skills_ui)
+        choose_professional_skills_ui.hide()
 
 
 if __name__ == '__main__':

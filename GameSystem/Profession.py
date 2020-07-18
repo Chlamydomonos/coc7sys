@@ -86,6 +86,12 @@ class Profession:
             temp += '，任意' + str(self.professional_skills_r1) + '项其他技能'
         return temp
 
+    def get_min_credit(self):
+        return self.credit[0]
+
+    def get_max_credit(self):
+        return self.credit[1]
+
 
 class AlternativeSkills:
     def __init__(self, skills, amount):
