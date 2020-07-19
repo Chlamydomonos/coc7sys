@@ -10,6 +10,7 @@ adjust_basics_ui = QtInitialize.AdjustBasicsUI()
 choose_profession_ui = QtInitialize.ChooseProfessionUI()
 choose_professional_skills_ui = QtInitialize.ChooseProfessionalSkillsUI()
 add_skill_points_ui = QtInitialize.AddSkillPointsUI()
+set_background_ui = QtInitialize.SetBackgroundUI()
 
 
 def fix_ui_position(ui1, ui2):
@@ -61,6 +62,33 @@ def enter_create_card_step5():
         choose_professional_skills_ui.hide()
 
 
+def enter_create_card_step6():
+    if add_skill_points_ui.points_complete:
+        set_background_ui.show()
+        fix_ui_position(set_background_ui, add_skill_points_ui)
+        set_background_ui.get_info_form_last_ui(add_skill_points_ui)
+        add_skill_points_ui.hide()
+
+
+def finish_create_card():
+    player_choose_card_ui.show()
+    player_choose_card_ui.initialize_list()
+    fix_ui_position(player_choose_card_ui, set_background_ui)
+    set_background_ui.hide()
+    create_card_info_ui.__init__()
+    adjust_basics_ui.__init__()
+    choose_profession_ui.__init__()
+    choose_professional_skills_ui.__init__()
+    add_skill_points_ui.__init__()
+    set_background_ui.__init__()
+    create_card_info_ui.create_card_info_ui.next_step.clicked.connect(enter_create_card_step2)
+    adjust_basics_ui.adjust_basics_ui.next_step.clicked.connect(enter_create_card_step3)
+    choose_profession_ui.choose_profession_ui.next_step.clicked.connect(enter_create_card_step4)
+    choose_professional_skills_ui.choose_professional_skills_ui.next_step.clicked.connect(enter_create_card_step5)
+    add_skill_points_ui.add_skill_points_ui.next_step.clicked.connect(enter_create_card_step6)
+    set_background_ui.set_background_ui.finish.clicked.connect(finish_create_card)
+
+
 if __name__ == '__main__':
     main_ui.main_ui.player_mode.clicked.connect(enter_player_mode)
     player_choose_card_ui.player_choose_card_ui.new_card.clicked.connect(enter_create_card_step1)
@@ -68,6 +96,8 @@ if __name__ == '__main__':
     adjust_basics_ui.adjust_basics_ui.next_step.clicked.connect(enter_create_card_step3)
     choose_profession_ui.choose_profession_ui.next_step.clicked.connect(enter_create_card_step4)
     choose_professional_skills_ui.choose_professional_skills_ui.next_step.clicked.connect(enter_create_card_step5)
+    add_skill_points_ui.add_skill_points_ui.next_step.clicked.connect(enter_create_card_step6)
+    set_background_ui.set_background_ui.finish.clicked.connect(finish_create_card)
 
     main_ui.show()
     sys.exit(app.exec_())

@@ -1,7 +1,9 @@
-from PyQt5.QtWidgets import QWidget, QSpinBox
+from PyQt5.QtWidgets import QWidget, QSpinBox, QListWidgetItem
 from UI import Main_UI, PlayerChooseCard_UI, CreateCardInfo_UI, AdjustBasics_UI, \
-    ChooseProfession_UI, ChooseProfessionalSkills_UI, AddSkillPoints_UI
-from GameSystem import CreateCard, Profession, Dice, SkillList
+    ChooseProfession_UI, ChooseProfessionalSkills_UI, AddSkillPoints_UI, SetBackground_UI
+from GameSystem import CreateCard, Profession, Dice, SkillList, RandomBackgroundList, Card
+import random, os
+from Core import FileIO
 
 
 class MainUI(QWidget):
@@ -9,6 +11,7 @@ class MainUI(QWidget):
         QWidget.__init__(self)
         self.main_ui = Main_UI.Ui_Form()
         self.main_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
 
 
 class PlayerChooseCardUI(QWidget):
@@ -16,6 +19,78 @@ class PlayerChooseCardUI(QWidget):
         QWidget.__init__(self)
         self.player_choose_card_ui = PlayerChooseCard_UI.Ui_Form()
         self.player_choose_card_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
+        self.card_list = FileIO.read_data('Cards\\list.cdlst')
+        self.card = None
+        self.initialize_list()
+        self.player_choose_card_ui.card_list_widget.currentItemChanged.connect(self.show_basic_card_data)
+        self.player_choose_card_ui.delete_card.clicked.connect(self.delete_card)
+        self.player_choose_card_ui.show_card.clicked.connect(self.choose_card)
+
+    def initialize_list(self):
+        tempui = self.player_choose_card_ui
+        tempui.card_list_widget.clear()
+        self.card_list = FileIO.read_data('Cards\\list.cdlst')
+        for i in self.card_list.list:
+            tempui.card_list_widget.addItem(QListWidgetItem(i))
+
+    def show_basic_card_data(self):
+        tempui = self.player_choose_card_ui
+        if len(self.card_list.list) != 0:
+            temp_card = FileIO.read_data('Cards\\' + self.card_list.list[tempui.card_list_widget.currentRow()] + '.card')
+            tempui.info1.setText(temp_card.info[0])
+            if temp_card.info[1] == 0:
+                tempui.info2.setText('男')
+            else:
+                tempui.info2.setText('女')
+            tempui.info3.setText(str(temp_card.info[2]))
+            tempui.info4.setText(temp_card.profession)
+            tempui.info5.setText(temp_card.info[3])
+            tempui.info6.setText(temp_card.info[4])
+
+            tempui.STR.setText(str(temp_card.basics[0].simple))
+            tempui.CON.setText(str(temp_card.basics[1].simple))
+            tempui.SIZ.setText(str(temp_card.basics[2].simple))
+            tempui.DEX.setText(str(temp_card.basics[3].simple))
+            tempui.APP.setText(str(temp_card.basics[4].simple))
+            tempui.INT.setText(str(temp_card.basics[5].simple))
+            tempui.POW.setText(str(temp_card.basics[6].simple))
+            tempui.EDU.setText(str(temp_card.basics[7].simple))
+
+            tempui.HP.setMaximum(temp_card.maxHP)
+            tempui.HP.setFixedWidth(temp_card.maxHP * 5)
+            tempui.max_HP.setText(str(temp_card.maxHP))
+            tempui.HP.setValue(temp_card.HP)
+            tempui.current_HP.setText(str(temp_card.HP))
+            tempui.SAN.setMaximum(temp_card.maxSan)
+            tempui.SAN.setFixedWidth(temp_card.maxSan)
+            tempui.max_SAN.setText(str(temp_card.maxSan))
+            tempui.SAN.setValue(temp_card.san)
+            tempui.current_SAN.setText(str(temp_card.san))
+            tempui.MP.setMaximum(temp_card.maxMP)
+            tempui.MP.setFixedWidth(temp_card.maxMP * 5)
+            tempui.max_MP.setText(str(temp_card.maxMP))
+            tempui.MP.setValue(temp_card.MP)
+            tempui.current_MP.setText(str(temp_card.MP))
+
+            tempui.show_card.setEnabled(True)
+            tempui.delete_card.setEnabled(True)
+        else:
+            tempui.show_card.setEnabled(False)
+            tempui.delete_card.setEnabled(False)
+
+    def delete_card(self):
+        tempui = self.player_choose_card_ui
+        temp = tempui.card_list_widget.currentRow()
+        temp_name = self.card_list.list[temp]
+        del self.card_list.list[temp]
+        FileIO.save_data('Cards\\list.cdlst', self.card_list)
+        self.initialize_list()
+        os.remove('Cards\\' + temp_name + '.card')
+
+    def choose_card(self):
+        tempui = self.player_choose_card_ui
+        self.card = FileIO.read_data('Cards\\' + self.card_list.list[tempui.card_list_widget.currentRow()] + '.card')
 
 
 class CreateCardInfoUI(QWidget):
@@ -23,6 +98,7 @@ class CreateCardInfoUI(QWidget):
         QWidget.__init__(self)
         self.create_card_info_ui = CreateCardInfo_UI.Ui_Form()
         self.create_card_info_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
         self.create_card_info_ui.next_step.clicked.connect(self.get_info)
         self.info_complete = False
         self.info = []
@@ -77,6 +153,7 @@ class AdjustBasicsUI(QWidget):
         QWidget.__init__(self)
         self.adjust_basics_ui = AdjustBasics_UI.Ui_Form()
         self.adjust_basics_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
         self.basics = []
         self.info = []
         self.temp1 = 0
@@ -232,6 +309,7 @@ class ChooseProfessionUI(QWidget):
         QWidget.__init__(self)
         self.choose_profession_ui = ChooseProfession_UI.Ui_Form()
         self.choose_profession_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
         self.basics = []
         self.info = []
         self.profession = Profession.Profession('', 0, 0, 0, [], [])
@@ -277,6 +355,7 @@ class ChooseProfessionalSkillsUI(QWidget):
         self.choose_professional_skills_ui = ChooseProfessionalSkills_UI.Ui_Form()
         QWidget.__init__(self)
         self.choose_professional_skills_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
         self.info = []
         self.basics = []
         self.profession = Profession.Profession('', 0, [], 0, [], [])
@@ -402,6 +481,7 @@ class AddSkillPointsUI(QWidget):
         QWidget.__init__(self)
         self.add_skill_points_ui = AddSkillPoints_UI.Ui_Form()
         self.add_skill_points_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
         self.info = []
         self.basics = []
         self.profession = Profession.Profession('', 0, [], 0, [], [])
@@ -417,6 +497,8 @@ class AddSkillPointsUI(QWidget):
         self.checked_professional_skills = []
         self.initials = []
         self.sum_labels = []
+        self.professionals = []
+        self.interests = []
         self.professional_points_left = 0
         self.interest_points_left = 0
         self.points_complete = False
@@ -497,7 +579,7 @@ class AddSkillPointsUI(QWidget):
             tempui.pr49, tempui.pr50, tempui.pr51, tempui.pr52, tempui.pr53, tempui.pr54,
             tempui.pr55, tempui.pr56, tempui.pr57, tempui.pr58, tempui.pr59, tempui.pr60
         ]
-        self.interest_spin_boxes= [
+        self.interest_spin_boxes = [
             tempui.in1, tempui.in2, tempui.in3, tempui.in4, tempui.in5, tempui.in6,
             tempui.in7, tempui.in8, tempui.in9, tempui.in10, tempui.in11, tempui.in12,
             tempui.in13, tempui.in14, tempui.in15, tempui.in16, tempui.in17, tempui.in18,
@@ -568,6 +650,10 @@ class AddSkillPointsUI(QWidget):
         tempui.min_credit.setText(str(self.profession.credit[0]))
         tempui.max_credit.setText(str(self.profession.credit[1]))
 
+        SkillList.initial_skills_dict['闪避'].amend_initial(self.basics[3] // 2)
+        for i in SkillList.initial_skills_dict['母语'].values():
+            i.amend_initial(self.basics[7])
+
     def initialize_checked_skills(self):
         for i in range(len(self.is_professional_skill)):
             temp_skill = self.CheckedSkill(self.professional_spin_boxes[i], self.interest_spin_boxes[i])
@@ -579,6 +665,8 @@ class AddSkillPointsUI(QWidget):
         tempui = self.add_skill_points_ui
         self.professional_points_left = self.profession.skill_points.calculate(self.basics)
         self.interest_points_left = self.basics[5] * 2
+        self.professionals = []
+        self.interests = []
         for i in self.checked_professional_skills:
             self.professional_points_left -= i.get_pr()
             self.interest_points_left -= i.get_in()
@@ -596,5 +684,78 @@ class AddSkillPointsUI(QWidget):
         if self.professional_points_left == 0 and self.interest_points_left == 0:
             self.points_complete = True
 
+        for i in self.checked_professional_skills:
+            self.professionals.append(i.get_pr())
+            self.interests.append(i.get_in())
+
     def complete(self):
         return self.points_complete
+
+
+class SetBackgroundUI(QWidget):
+    def __init__(self):
+        QWidget.__init__(self)
+        self.set_background_ui = SetBackground_UI.Ui_Form()
+        self.set_background_ui.setupUi(self)
+        self.setFixedSize(self.width(), self.height())
+        self.info = []
+        self.basics = []
+        self.profession = ''
+        self.skills = []
+        self.text_edits = []
+        self.background = []
+        self.card = None
+        self.initialize_texts()
+        self.random_texts()
+        self.set_background_ui.finish.clicked.connect(self.finish_card)
+
+    def get_info_form_last_ui(self, last_ui):
+        self.info = last_ui.info
+        self.profession = last_ui.profession.name
+        temp_basics = last_ui.basics
+        temp_sub_skills = last_ui.sub_skills
+        temp_professionals = last_ui.professionals
+        temp_interests = last_ui.interests
+        temp2_sub_skills = []
+        temp = 0
+        for i in SkillList.initial_skills_list:
+            if isinstance(i, dict):
+                temp2_sub_skills.append(temp_sub_skills[temp])
+                temp += 1
+            else:
+                temp2_sub_skills.append('')
+        self.basics, self.skills = CreateCard.create_skills(temp_basics, temp_professionals, temp_interests,
+                                                            temp2_sub_skills)
+
+    def initialize_texts(self):
+        tempui = self.set_background_ui
+        self.text_edits = [
+            tempui.bg1, tempui.bg2, tempui.bg3, tempui.bg4, tempui.bg5,
+            tempui.bg6, tempui.bg7, tempui.bg8, tempui.bg9
+        ]
+        tempui.renew.clicked.connect(self.random_texts)
+
+        for i in self.text_edits:
+            i.textChanged.connect(self.get_background)
+
+    def random_texts(self):
+        tempui = self.set_background_ui
+        tempui.rbg1.setText(random.sample(RandomBackgroundList.rbg1, 1)[0])
+        tempui.rbg2.setText(random.sample(RandomBackgroundList.rbg2, 1)[0])
+        tempui.rbg3.setText(random.sample(RandomBackgroundList.rbg3_1, 1)[0] + '\n' + \
+                            random.sample(RandomBackgroundList.rbg3_2, 1)[0])
+        tempui.rbg4.setText(random.sample(RandomBackgroundList.rbg4, 1)[0])
+        tempui.rbg5.setText(random.sample(RandomBackgroundList.rbg5, 1)[0])
+        tempui.rbg6.setText(random.sample(RandomBackgroundList.rbg6, 1)[0])
+
+    def get_background(self):
+        self.background = []
+        for i in self.text_edits:
+            self.background.append(i.toPlainText())
+
+    def finish_card(self):
+        self.card = Card.Card(self.info, self.profession, self.basics, self.skills, self.background)
+        temp_list = FileIO.read_data('Cards\\list.cdlst')
+        temp_list.add_card(self.card)
+        FileIO.save_data('Cards\\' + self.card.info[0] + '--' + str(len(temp_list.list)) + '.card', self.card)
+        FileIO.save_data('Cards\\list.cdlst', temp_list)

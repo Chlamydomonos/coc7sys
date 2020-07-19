@@ -31,6 +31,9 @@ class InitialSkill:
         self.name = main_name + branch_name
         self.initial = initial
 
+    def amend_initial(self, value):
+        self.initial = value
+
 
 class Skill(InitialSkill, Diceable):
     def __init__(self, initial_skill, growth, professional, interest):
@@ -65,25 +68,24 @@ class Skill(InitialSkill, Diceable):
 
 
 class Card:
-    def __init__(self, info, profession, icon, basics, skills, luck, background, equipments, weapons, items):
-        self.info = info  # info = [姓名, 年龄, 性别（0-男，1-女）, 住地, 故乡]
+    def __init__(self, info, profession, basics, skills, background):
+        self.info = info  # info = [姓名, 性别（0-男，1-女）, 年龄, 住地, 故乡]
         self.profession = profession
-        self.icon = icon
-        self.basics = basics
+        self.basics = basics  # basics = [STR, CON, SIZ, DEX, APP, INT, POW, EDU]
         self.skills = skills
-        self.luck = luck
+        self.luck = self.calculate_luck()
         self.maxHP = (basics[1].simple + basics[2].simple) // 10
         self.HP = self.maxHP
         self.DB, self.build = self.calculate_build()
         self.MOV = self.calculate_movement()
         self.maxSan = 99 - self.skills[11].simple
-        self.san = self.maxSan
+        self.san = self.basics[6].simple
         self.background = background
-        self.equipments = equipments
-        self.weapons = weapons
-        self.items = items
+        self.equipments = []
+        self.weapons = []
+        self.items = []
         self.consumeLevel = self.calculate_consume_level()
-        self.maxMP = self.basics[6] // 5
+        self.maxMP = self.basics[6].simple // 5
         self.MP = self.maxMP
         self.experience = []
         self.companion = []
@@ -126,3 +128,41 @@ class Card:
             return '富裕'
         else:
             return '富豪'
+
+    def calculate_luck(self):
+        if self.info[1] < 20:
+            temp1 = (Dice.D6 * 3).throw() * 5
+            temp2 = (Dice.D6 * 3).throw() * 5
+            return max(temp1, temp2)
+        else:
+            return (Dice.D6 * 3).throw() * 5
+
+    def add_equipment(self, equipment):
+        self.equipments.append(equipment)
+
+    def remove_equipment(self, equipment_id):
+        del self.equipments[equipment_id]
+
+    def add_weapon(self, weapon):
+        self.weapons.append(weapon)
+
+    def remove_weapon(self, weapon_id):
+        del self.weapons[weapon_id]
+
+    def add_item(self, item):
+        self.items.append(item)
+
+    def remove_item(self, item_id):
+        del self.items[item_id]
+
+
+class CardList:
+    def __init__(self):
+        self.list = []
+
+    def add_card(self, card: Card):
+        temp = len(self.list) + 1
+        self.list.append(card.info[0] + '--' + str(temp))
+
+    def delete_card(self, card_id):
+        del self.list[card_id]
